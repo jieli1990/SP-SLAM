@@ -875,8 +875,8 @@ bool Tracking::TrackReferenceKeyFrame()
             }
         }
     }
-
-    if(nDisgardPlane>0)
+//先屏蔽
+    //if(nDisgardPlane>0)
 
     return nmatchesMap>=5; //10
 }
