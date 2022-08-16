@@ -875,10 +875,12 @@ bool Tracking::TrackReferenceKeyFrame()
             }
         }
     }
-//先屏蔽
-    //if(nDisgardPlane>0)
 
+    if(nDisgardPlane>0)
     return nmatchesMap>=5; //10
+    
+    //添加返回
+    return false;
 }
 
 void Tracking::UpdateLastFrame()
